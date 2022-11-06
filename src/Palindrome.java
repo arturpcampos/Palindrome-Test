@@ -1,9 +1,15 @@
+import java.util.Scanner;
 
 public class Palindrome {
 
 	public static void main(String[] args) {
 	
-		String original = "nurses run";
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Escreva algo:");
+		String original = "";
+		original = input.nextLine();
+		
 		original = original.replace(" ", "");
 		
 		String palindrome = "";
@@ -29,6 +35,8 @@ public class Palindrome {
 		System.out.println(palindrome);
 		System.out.println(original);
 		System.out.println(original.length());
+		
+		input.close();
 	}
 
 }
